@@ -1,0 +1,157 @@
+/* Header CSS */
+.menu {
+    background-color: #6bb77b; /*#4fc0d0;*/
+    border: 1px solid #64ccc5;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 10px;
+}
+
+.button {
+    height: 49px;
+    border: 3px solid sandybrown;
+    border-radius: 20px;
+    background-color: #d05f4f;
+    order: 0;
+    font: 16px italic;
+    font-weight: bolder;
+    color: blanchedalmond;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+
+/*Amination for buttons from */
+/*
+.button:hover {
+    color: whitesmoke;
+    background-color: purple;
+}
+
+.button:active {
+    color: black;
+    background-color: white;
+}
+*/
+
+.focus {
+    background-color: blanchedalmond;
+    color: #4f80d0;
+    border: 3px solid #4f80d0;
+}
+
+.button,
+.focus {
+    -webkit-transition: background-color 0.75s ease, color 0.75s ease,
+        border 0.75s ease;
+    -moz-transition: background-color 0.75s ease, color 0.75s ease,
+        border 0.75s ease;
+    -o-transition: background-color 0.75s ease, color 0.75s ease,
+        border 0.75s ease;
+    transition: background-color 0.75s ease, color 0.75s ease, border 0.75s ease;
+}
+
+/* Content CSS: Info */
+.upper {
+    height: auto;
+    width: 50%;
+    margin-bottom: 50px;
+    position: relative;
+    left: 25%;
+    top: 30px;
+    border-radius: 20px 0;
+    border: 5px double orangered;
+}
+
+.upper h1,
+.upper h2 {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+
+.upper h1 {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.upper h2 {
+    margin-top: 5px;
+}
+
+.rows {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.upper h2,
+.picture {
+    order: 0;
+}
+
+.picture {
+    /* order: 0; */
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.picture img {
+    width: 50px;
+}
+
+/* Content CSS: Easy Start */
+.steps {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.step {
+    width: 200px;
+    height: 150px;
+    border-radius: 15px/10px;
+    border: 1px solid black;
+    display: inline-block;
+    padding: 5px;
+    padding-bottom: 12px;
+}
+
+.stepText {
+    font-size: 20px;
+    text-align: center;
+}
+
+.step div {
+    margin-bottom: 3px;
+}
+
+/* Footer CSS */
+.credits {
+    background-color: rgb(25, 0, 30);
+    padding: 10px;
+    display: flex;
+}
+
+.address,
+.company {
+    color: bisque;
+    font-size: 20px;
+}
+
+.shorts,
+.emblem {
+    order: 0;
+}
+
+.emblem {
+    position: relative;
+    left: 55%;
+    top: 3px;
+}
+
+.emblem img {
+    height: 120px;
+    border-radius: 20px;
+}
