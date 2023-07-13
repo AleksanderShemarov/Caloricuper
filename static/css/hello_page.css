@@ -3,13 +3,11 @@
     background-color: #6bb77b; /*#4fc0d0;*/
     border: 1px solid #64ccc5;
 }
-
 .buttons {
     display: flex;
     justify-content: space-around;
     margin: 20px 10px;
 }
-
 .button {
     height: 59px;
     border: 4px solid sandybrown;
@@ -23,13 +21,12 @@
         sans-serif;
 }
 
-/*Amination for buttons from */
+/*Amination for buttons from CSS*/
 /*
 .button:hover {
     color: whitesmoke;
     background-color: purple;
 }
-
 .button:active {
     color: black;
     background-color: white;
@@ -41,7 +38,6 @@
     color: #4f80d0;
     border: 4px solid #4f80d0;
 }
-
 .button,
 .focus {
     -webkit-transition: background-color 0.75s ease, color 0.75s ease,
@@ -71,7 +67,6 @@
     border-radius: 20px 0;
     border: 5px double orangered;
 }
-
 .upper h1,
 .upper h2 {
     margin-left: 30px;
@@ -79,38 +74,31 @@
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
         sans-serif;
 }
-
 .upper h1 {
     margin-bottom: 5px;
     text-align: center;
 }
-
 .upper h2 {
     margin-top: 5px;
 }
-
 .rows {
     display: inline-flex;
     justify-content: space-between;
 }
-
 .upper h2,
 .picture {
     order: 0;
 }
-
 .picture {
     /* order: 0; */
     margin-top: 10px;
     margin-right: 10px;
 }
-
 .picture img {
     width: 50px;
 }
 
 /* Content CSS: Easy Start */
-
 .start {
     border: 7px lime dashed;
     border-radius: 10%/25%;
@@ -128,12 +116,102 @@
     font-size: 100px;
     margin: 0;
 }
+.gadjet {
+    margin-left: 22%;
+    margin-right: 16%;
+    width: 62%;
+    height: auto;
+    border: 1px solid black;
+    display: block;
+    border-radius: 0 30px 55px 0;
+    border-left: none;
+    margin-bottom: 75px;
+}
+.clicker,
+.field {
+    display: inline-block;
+}
+.clicker {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px dotted black;
+    position: relative;
+    right: 150px;
+}
+.number {
+    width: 150px;
+    margin: auto;
+    margin-top: 28%;
+    /* border: 1px solid black; */
+}
+.num {
+    width: 100px;
+    height: 100px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 85px;
+}
+.arrows {
+    /* border: 1px solid black; */
+    margin: auto;
+    display: block;
+}
+.arrow-1,
+.arrow-2 {
+    /* display: inline-block; */
+    margin-top: 2px;
+}
+.arrow-1 {
+    height: 0;
+    width: 0;
+    border-right: 35px solid goldenrod;
+    border-bottom: 17.5px solid transparent;
+    border-top: 17.5px solid transparent;
+    border-left: 0 solid transparent;
+    background-color: rgba(255, 255, 255, 0);
+    float: left;
+    margin-left: 7px;
+}
+.arrow-2 {
+    height: 0;
+    width: 0;
+    border-left: 35px solid goldenrod;
+    border-bottom: 17.5px solid transparent;
+    border-top: 17.5px solid transparent;
+    border-right: 0 solid transparent;
+    background-color: rgba(255, 255, 255, 0);
+    float: right;
+    margin-right: 7px;
+}
+.field {
+    border: 1px solid black;
+}
+/* #text {
+    width: 100px;
+    height: 10px;
+    border-radius: 2px;
+    border: 1px solid black;
+    display: inline-block;
+}*/
+/* #illu {
+    border: 1px solid black;
+    display: inline-block;
+} */
+.field p,
+.field img {
+    display: inline-block;
+    border: 1px solid black;
+}
 
+/* Easy inline-blocks without any decorations */
+/*
 .steps {
     display: block;
     margin-bottom: 10px;
 }
-
 .step {
     width: 200px;
     height: 150px;
@@ -144,15 +222,16 @@
     padding-bottom: 12px;
     vertical-align: middle;
 }
-
 .stepText {
     font-size: 20px;
     text-align: center;
 }
-
 .step div {
     margin-bottom: 3px;
 }
+*/
+
+/* Pad fields */
 
 /* Footer CSS */
 .credits {
@@ -160,26 +239,22 @@
     padding: 10px;
     display: block;
 }
-
 .address,
 .company {
     color: bisque;
     font-size: 20px;
 }
-
 .shorts,
 .emblem {
     /* order: 0; */
     display: inline-block;
 }
-
 .emblem {
     /* position: relative;
     left: 55%; */
     float: right;
     margin-top: 3px;
 }
-
 .emblem img {
     height: 120px;
     border-radius: 20px;
