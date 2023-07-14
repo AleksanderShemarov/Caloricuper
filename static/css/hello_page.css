@@ -52,7 +52,11 @@
 /* It is the first step for Day-n-Time place */
 .DayTime {
     border: 1px dashed black;
-    background-color: purple;
+    width: 150px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    text-align: center;
 }
 
 /* Content CSS: Info */
@@ -121,28 +125,43 @@
     margin-right: 16%;
     width: 62%;
     height: auto;
-    border: 1px solid black;
+    border: 2px dashed orange;
     display: block;
     border-radius: 0 30px 55px 0;
     border-left: none;
     margin-bottom: 75px;
+    background-color: #66e0ff;
+    position: relative; /* for absolute positioning of child elements */
 }
 .clicker,
 .field {
     display: inline-block;
 }
 .clicker {
-    width: 300px;
-    height: 300px;
+    width: 294px;
+    height: 294px;
     border-radius: 50%;
-    border: 1px dotted black;
+    border: 6px double orangered;
     position: relative;
     right: 150px;
+    background-color: #4da6ff;
+    z-index: 2;
 }
 .number {
     width: 150px;
+    margin: auto; /* put the element by center */
+    margin-top: 15%;
+    /* border: 1px solid black; */
+    position: relative;
+}
+.page {
     margin: auto;
-    margin-top: 28%;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    color: bisque;
+    text-align: center;
     /* border: 1px solid black; */
 }
 .num {
@@ -150,9 +169,11 @@
     height: 100px;
     /* border: 1px solid black; */
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 26px;
     text-align: center;
     font-size: 85px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
 }
 .arrows {
     /* border: 1px solid black; */
@@ -167,7 +188,7 @@
 .arrow-1 {
     height: 0;
     width: 0;
-    border-right: 35px solid goldenrod;
+    border-right: 35px solid #b1871b;
     border-bottom: 17.5px solid transparent;
     border-top: 17.5px solid transparent;
     border-left: 0 solid transparent;
@@ -178,7 +199,7 @@
 .arrow-2 {
     height: 0;
     width: 0;
-    border-left: 35px solid goldenrod;
+    border-left: 35px solid #b1871b;
     border-bottom: 17.5px solid transparent;
     border-top: 17.5px solid transparent;
     border-right: 0 solid transparent;
@@ -186,8 +207,59 @@
     float: right;
     margin-right: 7px;
 }
+.arrows-up {
+    /* border: 1px solid black; */
+    margin: auto;
+    display: block;
+    position: absolute;
+    bottom: -57px;
+    left: -5px;
+}
+.arrow-up-1,
+.arrow-up-2 {
+    display: inline-block;
+}
+.arrow-up-1 {
+    height: 0;
+    width: 0;
+    border-right: 35px solid goldenrod;
+    border-bottom: 17.5px solid transparent;
+    border-top: 17.5px solid transparent;
+    border-left: 0 solid transparent;
+    background-color: rgba(255, 255, 255, 0);
+    margin-left: 7px;
+    margin-right: 40px;
+}
+.arrow-up-2 {
+    height: 0;
+    width: 0;
+    border-left: 35px solid goldenrod;
+    border-bottom: 17.5px solid transparent;
+    border-top: 17.5px solid transparent;
+    border-right: 0 solid transparent;
+    background-color: rgba(255, 255, 255, 0);
+}
+.arrow-up-1:active {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+.arrow-up-2:active {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
 .field {
-    border: 1px solid black;
+    border: 2px solid bisque;
+    height: 240px;
+    position: absolute;
+    top: 30px;
+    width: 80%;
+    right: 10%;
+    z-index: 1;
+    border-top-right-radius: 20% 50%;
+    border-bottom-right-radius: 20% 50%;
+    background-color: #1affd1;
 }
 /* #text {
     width: 100px;
@@ -203,7 +275,23 @@
 .field p,
 .field img {
     display: inline-block;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+.field p {
+    font-size: 36px;
+    color: blanchedalmond;
+    margin-left: 75px;
+    height: auto;
+    width: 500px;
+}
+.field img {
+    position: relative;
+    bottom: 50%;
+    width: 120px;
+    height: 120px;
     border: 1px solid black;
+    border-radius: 10%;
 }
 
 /* Easy inline-blocks without any decorations */
