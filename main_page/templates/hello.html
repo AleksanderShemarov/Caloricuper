@@ -7,8 +7,8 @@
         <input class="button" type="button" value="To Main" />
         <input class="button" type="button" value="Sign In" />
         <div class="DayTime">
-            Today is:
             <div id="weekday"></div>
+            <div id="date"></div>
             <div id="time"></div>
         </div>
         <input class="button" type="button" value="Registration" />
@@ -55,7 +55,7 @@
         <div class="clicker">
             <div class="number">
                 <div class="page">STEP</div>
-                <div class="num">0</div>
+                <div class="num"></div>
                 <div class="arrows">
                     <input class="arrow-1" type="button" value="prev" />
                     <input class="arrow-2" type="button" value="next" />
@@ -69,11 +69,11 @@
         <div class="field">
             <!--<div id="text"><p>Lorem ipsum dolor sit amet.</p></div>-->
             <!--<div id="illu">-->
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                excepturi ratione impedit, quam totam cum.
+            <p id="text">
+                <!--Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                excepturi ratione impedit, quam totam cum.-->
             </p>
-            <img src="" alt="foto" />
+            <img id="pict" src="" alt="foto" />
             <!--</div>-->
         </div>
     </div>
@@ -121,5 +121,6 @@
     </div>
     <script src="{% static 'js/buttons.js' %}"></script>
     <script src="{% static 'js/day_n_time.js' %}"></script>
+    <script src="{% static 'js/steps.js'%}"></script>
 </footer>
 {% endblock %}

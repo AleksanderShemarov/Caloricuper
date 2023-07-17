@@ -24,8 +24,12 @@ document.addEventListener("DOMContentLoaded", function () {
             "December",
         ];
     let day = document.getElementById("weekday"),
+        fullDate = document.getElementById("date"),
         clock = document.getElementById("time");
     day.textContent = days[date.getDay()];
+    fullDate.textContent = `${
+        months[date.getMonth()]
+    }/${date.getDate()}/${date.getFullYear()}`;
     clock.textContent = `${
         date.getHours() > 9 ? date.getHours() : "0" + date.getHours()
     }:${date.getMinutes() > 9 ? date.getMinutes() : "0" + date.getMinutes()}:${
@@ -46,5 +50,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 ? newTime.getSeconds()
                 : "0" + newTime.getSeconds()
         }`;
+        if (clock.textContent === "00:00:00") {
+            let newDay = new Date();
+            fullDate.textContent = `${
+                months[newDay.getMonth()]
+            }/${newDay.getDate()}/${newDay.getFullYear()}`;
+        }
     }, 1000);
 });
