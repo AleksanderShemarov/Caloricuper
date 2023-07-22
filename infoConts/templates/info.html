@@ -1,0 +1,24 @@
+{% extends 'base.html' %} {% load static %} {% block head %}
+<title>New and Info</title>
+<link rel="stylesheet" href="{% static 'css/info_page.css' %}?{% now "U" %}" />
+{% endblock %} {% block header %}
+<header class="table">
+    <div class="buttons">
+        <div class="button">
+            <a href="#" method="GET">To Main</a>
+        </div>
+        <div class="button">
+            <a href="#" method="GET">Sign In </a>
+        </div>
+        <div class="button">
+            <a href="{% url 'greet' %}" method="GET">Greetings</a>
+        </div>
+    </div>
+</header>
+{% endblock %} {% block content %}
+<div></div>
+{% endblock %} {% block footer %}
+<footer>
+    <script src="{% static 'js/infoButtons.js' %}"></script>
+</footer>
+{% endblock %}

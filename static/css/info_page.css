@@ -1,0 +1,43 @@
+.table,
+.button {
+    border: 1px solid black;
+}
+.buttons {
+    display: flex;
+}
+.button {
+    order: 0;
+    flex-grow: 1;
+    height: 60px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bolder;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    padding-top: 20px;
+}
+.button a {
+    display: block;
+    color: chocolate;
+    text-decoration: none;
+    padding-top: 20px;
+    height: 60px;
+    margin-top: -20px;
+}
+.focus {
+    background-color: antiquewhite;
+}
+.focus a {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.button,
+.focus,
+.focus a {
+    -webkit-transition: background-color 0.5s ease, color 0.5s ease;
+    -moz-transition: background-color 0.5s ease, color 0.5s ease;
+    -o-transition: background-color 0.5s ease, color 0.5s ease;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}

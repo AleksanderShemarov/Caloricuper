@@ -1,8 +1,8 @@
 from django.urls import path
 from django.conf.urls.static import static
 from django.conf import settings
-from .views import TemplateObjectView
+from .views import NewInfoView
 
 urlpatterns = [
-    path('', TemplateObjectView.as_view(), name="greet"),
+    path('', NewInfoView.as_view(), name="info"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
