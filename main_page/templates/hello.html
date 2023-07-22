@@ -4,15 +4,23 @@
 {% endblock %} {% block header %}
 <header class="menu">
     <div class="buttons">
-        <input class="button" type="button" value="To Main" />
-        <input class="button" type="button" value="Sign In" />
+        <form action="#" method="GET">
+            <button class="button" type="submit">To Main</button>
+        </form>
+        <form action="#" method="GET">
+            <button class="button" type="submit">Sign In</button>
+        </form>
         <div class="DayTime">
             <div id="weekday"></div>
             <div id="date"></div>
             <div id="time"></div>
         </div>
-        <input class="button" type="button" value="Registration" />
-        <input class="button" type="button" value="Info&Contacts" />
+        <form action="#" method="GET">
+            <button class="button" type="submit">Registration</button>
+        </form>
+        <form action="{% url 'info' %}" method="GET">
+            <button class="button" type="submit">Info&Contacts</button>
+        </form>
     </div>
 </header>
 {% endblock %} {% block content %}
