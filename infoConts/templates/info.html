@@ -16,9 +16,32 @@
     </div>
 </header>
 {% endblock %} {% block content %}
-<div></div>
+<div>
+    <!--Messages from Last Info database-->
+    <div class="mesWindow">
+        Window of Messages
+        <!--The Template of messages {-->
+        <div class="mesField">
+            Message Container
+            <div id="daytime">Day & Time</div>
+            <div id="conteiner">
+                Content Container
+                <div class="titles">
+                    <div id="title">Title</div>
+                    <div id="author">Author</div>
+                </div>
+                <div id="message_box">Message</div>
+            </div>
+        </div>
+        <!--The Template }-->
+    </div>
+</div>
 {% endblock %} {% block footer %}
 <footer>
+    <div class="credits">
+        <div id="company"><p>Enthentuazis SingleCo.</p></div>
+        <div id="planet_year"><p>Tessia, 2023</p></div>
+    </div>
     <script src="{% static 'js/infoButtons.js' %}"></script>
 </footer>
 {% endblock %}

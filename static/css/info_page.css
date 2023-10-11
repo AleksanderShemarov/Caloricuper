@@ -41,3 +41,72 @@
     -o-transition: background-color 0.5s ease, color 0.5s ease;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
+
+.mesWindow,
+.mesField {
+    border: 3px solid #ff9200;
+}
+.mesWindow {
+    margin-top: 26px;
+    width: auto;
+}
+.mesField,
+.titles {
+    display: flex;
+}
+#daytime {
+    order: 0;
+    flex-grow: 1;
+    height: 25px;
+    margin: 10px 10px 30px 10px;
+    border: 2px dotted black;
+    text-align: center;
+}
+#conteiner {
+    order: 0;
+    flex-grow: 5;
+    height: 100px;
+    margin: 10px 10px 10px 10px;
+    border: 2px dotted black;
+}
+#title,
+#author {
+    order: 0;
+    flex-grow: 1;
+    height: 25px;
+    border: purple double 2px;
+}
+.titles > #author {
+    text-align: right;
+}
+#message_box {
+    display: block;
+    border: rgb(104, 200, 235) dashed 2px;
+    height: 50px;
+}
+
+.credits {
+    width: auto;
+    display: flex;
+    border: 3px grey solid;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+#company,
+#planet_year {
+    order: 0;
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.credits > #planet_year p {
+    text-align: right;
+}
+#company p,
+#planet_year p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-weight: lighter;
+    color: gray;
+    font-size: 20px;
+}
