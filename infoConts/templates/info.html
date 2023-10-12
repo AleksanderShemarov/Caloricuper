@@ -19,29 +19,43 @@
 <div>
     <!--Messages from Last Info database-->
     <div class="mesWindow">
-        Window of Messages
-        <!--The Template of messages {-->
-        <div class="mesField">
-            Message Container
-            <div id="daytime">Day & Time</div>
-            <div id="conteiner">
-                Content Container
-                <div class="titles">
-                    <div id="title">Title</div>
-                    <div id="author">Author</div>
-                </div>
-                <div id="message_box">Message</div>
-            </div>
+        <div id="info_tabs">
+            <button id="info_1" type="button">Last News</button>
+            <button id="info_2" type="button">Team Info</button>
         </div>
-        <!--The Template }-->
+        <div class="mesField">
+            {% for message in last_info %}
+            <div class="news">
+                <div id="daytime">
+                    {{ message.date }}<br />{{ message.time }}
+                </div>
+                <div id="conteiner">
+                    <div class="titles">
+                        <div id="title">"{{ message.title }}"</div>
+                        <div id="author">
+                            Created by: {{ message.team_staff }}
+                        </div>
+                        </div>
+                    <div id="message_box">
+                        {{ message.message|linebreaksbr }}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="contact_list">
+            List of contacts and team staff will be here
+        </div>
     </div>
+    </div>
+    {% endblock %} {% block footer %}
+    <footer>
+        <div class="credits">
+            <div id="company"><p>Enthentuazis SingleCo.</p></div>
+            <div id="planet_year"><p>Tessia, 2023</p></div>
+        </div>
+        <script src="{% static 'js/infoButtons.js' %}"></script>
+        <script src="{% static 'js/news_staff.js' %}"></script>
+    </footer>
+    {% endblock %}
 </div>
-{% endblock %} {% block footer %}
-<footer>
-    <div class="credits">
-        <div id="company"><p>Enthentuazis SingleCo.</p></div>
-        <div id="planet_year"><p>Tessia, 2023</p></div>
-    </div>
-    <script src="{% static 'js/infoButtons.js' %}"></script>
-</footer>
-{% endblock %}
