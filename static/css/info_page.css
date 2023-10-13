@@ -90,7 +90,8 @@
     visibility: visible;
 }
 .news,
-.titles {
+.titles,
+.members {
     display: flex;
 }
 .news {
@@ -145,6 +146,40 @@
     visibility: hidden;
     margin: 10px 5px 15px 5px;
     border: 2px solid #ff9200;
+}
+#photo,
+#description {
+    border: 2px solid #ff9200;
+    border-radius: 10px/15px;
+    order: 0;
+}
+#photo {
+    min-width: 80px;
+    min-height: 80px;
+    flex-grow: 1;
+    margin: 20px 10px 40px 50px;
+}
+#description {
+    min-height: 80px;
+    flex-grow: 4;
+    padding: 4px 10px 5px 10px;
+    margin: 20px 50px 20px 10px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 18px;
+}
+#name_born_city {
+    display: flex;
+    border: 1px solid black;
+}
+#fullName,
+#bornDate,
+#city {
+    order: 0;
+    flex-grow: 1;
+    border: 1px solid black;
+    height: 40px;
+    text-align: center;
 }
 
 .credits {
