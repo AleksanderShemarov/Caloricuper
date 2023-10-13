@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import LastInfo
+from .models import LastInfo, Developer
 
 # Register your models here.
 
@@ -11,3 +11,4 @@ class LastInfoAdmin(admin.ModelAdmin):
 
 
 admin.site.register(LastInfo, LastInfoAdmin)
+admin.site.register(Developer)
