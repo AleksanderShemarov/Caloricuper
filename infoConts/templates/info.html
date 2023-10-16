@@ -44,27 +44,34 @@
             {% endfor %}
         </div>
         <div class="contact_list">
-            {% comment %} {% for dev in devs %} {% endcomment %}
+            {% for dev in devs %}
             <div class="members">
                 <div id="photo">
                     <img src="" alt="name_of_photo">
                 </div>
                 <div id="description">
                     <div id="name_born_city">
-                        <div id="fullName"><span>Lorem ipsum dolor sit amet.</span></div>
+                        <!--<div id="fullName"><span>Lorem ipsum dolor sit amet.</span></div>
                         <div id="bornDate"><span>Lorem ipsum dolor sit amet.</span></div>
-                        <div id="city"><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div id="city"><span>Lorem ipsum dolor sit amet.</span></div>-->
+                        <div id="fullName"><span>{{ dev.first_name }} {{ dev.last_name }}, {{ dev.status_position }}</span></div>
+                        <div id="bornDate"><span>Born Date: {{ dev.born }}</span></div>
+                        <div id="city"><span>Live in: {{ dev.city }}</span></div>
                         <div></div>
                     </div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit magni suscipit qui excepturi saepe vitae sapiente optio eos labore placeat.</p>
+                    <!--<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit magni suscipit qui excepturi saepe vitae sapiente optio eos labore placeat.</p>-->
+                    <p>{{ dev.description }}</p>
                     <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, cumque?</li>
+                        <!--<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, cumque?</li>
                         <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>-->
+                        <li>Email(-s): {{ dev.email_address }}</li>
+                        <li>Telephone(-s): {{ dev.telephones }}</li>
+                        <li>Others: Links on social webs will be here soon.</li>
                     </ul>
                 </div>
             </div>
-            {% comment %} {% endfor %} {% endcomment %}
+            {% endfor %}
         </div>
     </div>
     </div>
