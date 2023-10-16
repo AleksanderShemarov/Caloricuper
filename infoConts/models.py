@@ -23,6 +23,8 @@ class Developer(models.Model):
     last_name = models.CharField(max_length=50)
     username = models.ForeignKey(
         User, blank=True, null=True, related_name="nickname", on_delete=models.SET_NULL)
+    born = models.DateField(blank=True, null=True)
+    city = models.CharField(max_length=50, blank=True, null=True)
     email_address = models.TextField(max_length=150)
     telephones = models.TextField(blank=True, null=True, max_length=100)
     status_position = models.CharField(max_length=50)
