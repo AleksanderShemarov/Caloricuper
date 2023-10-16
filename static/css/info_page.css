@@ -94,6 +94,10 @@
 .members {
     display: flex;
 }
+.news,
+.members {
+    background-color: antiquewhite;
+}
 .news {
     border: 3px solid #ff9200;
     margin: 10px 5px 15px 5px;
