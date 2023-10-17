@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let buttonBlock = document.querySelector("div.buttons");
-    let buttons = buttonBlock.childNodes;
-    for (let button of buttons) {
-        if (button.value !== undefined) {
+    let buttonBlock = document.getElementsByClassName("button");
+    // let buttons = buttonBlock.childNodes;
+    for (let button of buttonBlock) {
+        if (button.type !== undefined) {
             button.addEventListener("mousemove", () => {
                 button.classList.add("focus");
             });

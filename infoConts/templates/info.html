@@ -1,0 +1,88 @@
+{% extends 'base.html' %} {% load static %} {% block head %}
+<title>New and Info</title>
+<link rel="stylesheet" href="{% static 'css/info_page.css' %}?{% now "U" %}" />
+{% endblock %} {% block header %}
+<header class="table">
+    <div class="buttons">
+        <div class="button">
+            <a href="#" method="GET">To Main</a>
+        </div>
+        <div class="button">
+            <a href="#" method="GET">Sign In </a>
+        </div>
+        <div class="button">
+            <a href="{% url 'greet' %}" method="GET">Greetings</a>
+        </div>
+    </div>
+</header>
+{% endblock %} {% block content %}
+<div>
+    <!--Messages from Last Info database-->
+    <div class="mesWindow">
+        <div id="info_tabs">
+            <button id="info_1" type="button">Last News</button>
+            <button id="info_2" type="button">Team Info</button>
+        </div>
+        <div class="mesField">
+            {% for message in last_info %}
+            <div class="news">
+                <div id="daytime">
+                    {{ message.date }}<br />{{ message.time }}
+                </div>
+                <div id="conteiner">
+                    <div class="titles">
+                        <div id="title">"{{ message.title }}"</div>
+                        <div id="author">
+                            Created by: {{ message.team_staff }}
+                        </div>
+                        </div>
+                    <div id="message_box">
+                        {{ message.message|linebreaksbr }}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="contact_list">
+            {% for dev in devs %}
+            <div class="members">
+                <div id="photo">
+                    <img src="" alt="name_of_photo">
+                </div>
+                <div id="description">
+                    <div id="name_born_city">
+                        <!--<div id="fullName"><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div id="bornDate"><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div id="city"><span>Lorem ipsum dolor sit amet.</span></div>-->
+                        <div id="fullName"><span>{{ dev.first_name }} {{ dev.last_name }}, {{ dev.status_position }}</span></div>
+                        <div id="bornDate"><span>Born Date: {{ dev.born }}</span></div>
+                        <div id="city"><span>Live in: {{ dev.city }}</span></div>
+                        <div></div>
+                    </div>
+                    <!--<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit magni suscipit qui excepturi saepe vitae sapiente optio eos labore placeat.</p>-->
+                    <p>{{ dev.description }}</p>
+                    <ul>
+                        <!--<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, cumque?</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>-->
+                        <li>Email(-s): {{ dev.email_address }}</li>
+                        <li>Telephone(-s): {{ dev.telephones }}</li>
+                        <li>Others: Links on social webs will be here soon.</li>
+                    </ul>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    </div>
+    {% endblock %} {% block footer %}
+    <footer>
+        <div class="credits">
+            <div id="company"><p>Enthentuazis SingleCo.</p></div>
+            <div id="planet_year"><p>Tessia, 2023</p></div>
+        </div>
+        <script src="{% static 'js/infoButtons.js' %}"></script>
+        <script src="{% static 'js/news_staff.js' %}"></script>
+    </footer>
+    {% endblock %}
+</div>

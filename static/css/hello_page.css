@@ -3,16 +3,14 @@
     background-color: #6bb77b; /*#4fc0d0;*/
     border: 1px solid #64ccc5;
 }
-
 .buttons {
     display: flex;
     justify-content: space-around;
     margin: 20px 10px;
 }
-
 .button {
-    height: 49px;
-    border: 3px solid sandybrown;
+    height: 59px;
+    border: 4px solid sandybrown;
     border-radius: 20px;
     background-color: #d05f4f;
     order: 0;
@@ -23,13 +21,12 @@
         sans-serif;
 }
 
-/*Amination for buttons from */
+/*Amination for buttons from CSS*/
 /*
 .button:hover {
     color: whitesmoke;
     background-color: purple;
 }
-
 .button:active {
     color: black;
     background-color: white;
@@ -39,9 +36,8 @@
 .focus {
     background-color: blanchedalmond;
     color: #4f80d0;
-    border: 3px solid #4f80d0;
+    border: 4px solid #4f80d0;
 }
-
 .button,
 .focus {
     -webkit-transition: background-color 0.75s ease, color 0.75s ease,
@@ -53,18 +49,31 @@
     transition: background-color 0.75s ease, color 0.75s ease, border 0.75s ease;
 }
 
+/* It is the first step for Day-n-Time place */
+.DayTime {
+    border: 1px dashed black;
+    width: 150px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    text-align: center;
+}
+#weekday {
+    padding-top: 10px;
+}
+
 /* Content CSS: Info */
 .upper {
     height: auto;
-    width: 50%;
+    width: 70%;
     margin-bottom: 50px;
     position: relative;
-    left: 25%;
+    left: 15%;
+    right: 15%;
     top: 30px;
     border-radius: 20px 0;
     border: 5px double orangered;
 }
-
 .upper h1,
 .upper h2 {
     margin-left: 30px;
@@ -72,42 +81,228 @@
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
         sans-serif;
 }
-
 .upper h1 {
     margin-bottom: 5px;
     text-align: center;
 }
-
 .upper h2 {
     margin-top: 5px;
 }
-
 .rows {
     display: inline-flex;
     justify-content: space-between;
 }
-
 .upper h2,
 .picture {
     order: 0;
 }
-
 .picture {
     /* order: 0; */
     margin-top: 10px;
     margin-right: 10px;
 }
-
 .picture img {
     width: 50px;
 }
 
 /* Content CSS: Easy Start */
+.start {
+    border: 7px lime dashed;
+    border-radius: 10%/25%;
+    background-color: orange;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 75px;
+    padding-bottom: 20px;
+}
+.start h3 {
+    text-align: center;
+    font-size: 100px;
+    margin: 0;
+}
+.gadjet {
+    margin-left: 22%;
+    margin-right: 16%;
+    width: 62%;
+    height: auto;
+    border: 2px dashed orange;
+    display: block;
+    border-radius: 0 30px 55px 0;
+    border-left: none;
+    margin-bottom: 75px;
+    background-color: #66e0ff;
+    position: relative; /* for absolute positioning of child elements */
+}
+.clicker,
+.field {
+    display: inline-block;
+}
+.clicker {
+    width: 294px;
+    height: 294px;
+    border-radius: 50%;
+    border: 6px double orangered;
+    position: relative;
+    right: 150px;
+    background-color: #4da6ff;
+    z-index: 2;
+}
+.number {
+    width: 150px;
+    margin: auto; /* put the element by center */
+    margin-top: 15%;
+    /* border: 1px solid black; */
+    position: relative;
+}
+.page {
+    margin: auto;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    color: bisque;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+.num {
+    width: 100px;
+    height: 100px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-bottom: 26px;
+    text-align: center;
+    font-size: 85px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+.arrows {
+    /* border: 1px solid black; */
+    margin: auto;
+    display: block;
+}
+.arrow-1,
+.arrow-2 {
+    /* display: inline-block; */
+    margin-top: 2px;
+}
+.arrow-1 {
+    height: 0;
+    width: 0;
+    border-right: 35px solid #b1871b;
+    border-bottom: 17.5px solid transparent;
+    border-top: 17.5px solid transparent;
+    border-left: 0 solid transparent;
+    background-color: rgba(255, 255, 255, 0);
+    float: left;
+    margin-left: 7px;
+}
+.arrow-2 {
+    height: 0;
+    width: 0;
+    border-left: 35px solid #b1871b;
+    border-bottom: 17.5px solid transparent;
+    border-top: 17.5px solid transparent;
+    border-right: 0 solid transparent;
+    background-color: rgba(255, 255, 255, 0);
+    float: right;
+    margin-right: 7px;
+}
+.arrows-up {
+    /* border: 1px solid black; */
+    margin: auto;
+    display: block;
+    position: absolute;
+    bottom: -57px;
+    left: -5px;
+}
+.arrow-up-1,
+.arrow-up-2 {
+    display: inline-block;
+}
+.arrow-up-1 {
+    height: 0;
+    width: 0;
+    border-right: 35px solid goldenrod;
+    border-bottom: 17.5px solid transparent;
+    border-top: 17.5px solid transparent;
+    border-left: 0 solid transparent;
+    background-color: rgba(255, 255, 255, 0);
+    margin-left: 7px;
+    margin-right: 40px;
+}
+.arrow-up-2 {
+    height: 0;
+    width: 0;
+    border-left: 35px solid goldenrod;
+    border-bottom: 17.5px solid transparent;
+    border-top: 17.5px solid transparent;
+    border-right: 0 solid transparent;
+    background-color: rgba(255, 255, 255, 0);
+}
+.arrow-up-1:active {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+.arrow-up-2:active {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+.field {
+    border: 2px solid bisque;
+    height: 240px;
+    position: absolute;
+    top: 30px;
+    width: 80%;
+    right: 10%;
+    z-index: 1;
+    border-top-right-radius: 20% 50%;
+    border-bottom-right-radius: 20% 50%;
+    background-color: #1affd1;
+}
+/* #text {
+    width: 100px;
+    height: 10px;
+    border-radius: 2px;
+    border: 1px solid black;
+    display: inline-block;
+}*/
+/* #illu {
+    border: 1px solid black;
+    display: inline-block;
+} */
+#text,
+#pict {
+    display: inline-block;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+#text {
+    font-size: 36px;
+    color: blanchedalmond;
+    margin-left: 75px;
+    height: 175px;
+    width: 500px;
+}
+#pict {
+    position: relative;
+    top: 60px;
+    width: 120px;
+    height: 120px;
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+/* Easy inline-blocks without any decorations */
+/*
 .steps {
     display: block;
     margin-bottom: 10px;
 }
-
 .step {
     width: 200px;
     height: 150px;
@@ -116,41 +311,41 @@
     display: inline-block;
     padding: 5px;
     padding-bottom: 12px;
+    vertical-align: middle;
 }
-
 .stepText {
     font-size: 20px;
     text-align: center;
 }
-
 .step div {
     margin-bottom: 3px;
 }
+*/
+
+/* Pad fields */
 
 /* Footer CSS */
 .credits {
     background-color: rgb(25, 0, 30);
     padding: 10px;
-    display: flex;
+    display: block;
 }
-
 .address,
 .company {
     color: bisque;
     font-size: 20px;
 }
-
 .shorts,
 .emblem {
-    order: 0;
+    /* order: 0; */
+    display: inline-block;
 }
-
 .emblem {
-    position: relative;
-    left: 55%;
-    top: 3px;
+    /* position: relative;
+    left: 55%; */
+    float: right;
+    margin-top: 3px;
 }
-
 .emblem img {
     height: 120px;
     border-radius: 20px;
