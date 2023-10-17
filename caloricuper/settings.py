@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'main_page.apps.MainPageConfig',
     'infoConts.apps.InfocontsConfig',
     'rest_framework',
+    'signInReg.apps.SigninregConfig',
 ]
 
 MIDDLEWARE = [
