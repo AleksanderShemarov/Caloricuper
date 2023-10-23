@@ -42,9 +42,11 @@ INSTALLED_APPS = [
     'infoConts.apps.InfocontsConfig',
     'rest_framework',
     'signInReg.apps.SigninregConfig',
+    'shortMain.apps.ShortmainConfig',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
